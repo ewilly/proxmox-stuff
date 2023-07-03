@@ -130,7 +130,7 @@ function copyfilesystem {
     tar --warning='no-file-ignored' -cvPf "$_filename2" /var/lib/pve-cluster/.
     tar --warning='no-file-ignored' -cvPf "$_filename3" /root/.
     tar --warning='no-file-ignored' -cvPf "$_filename4" /var/spool/cron/.
-    tar --warning='no-file-ignored' -cvPf "$_filename4" /opt/.
+    tar --warning='no-file-ignored' -cvPf "$_filename9" /opt/.
 
     if [ "$(ls -A /usr/local/bin 2>/dev/null)" ]; then tar --warning='no-file-ignored' -cvPf "$_filename8" /usr/local/bin/.; fi
 
